@@ -40,7 +40,7 @@ li {
     left: 3rem;
 }
 #header a {
-    position: absolute;
+    /* position: absolute; */
     font-size: 0.3rem;
     color: #fff;
     top:0.55rem;
