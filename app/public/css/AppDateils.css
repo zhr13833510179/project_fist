@@ -27,7 +27,7 @@ li {
   }
   #header-Dateils .status-img {
     width: 7.29rem;
-    height: 0.35rem;
+    /* height: 0.35rem; */
     float: left;
     margin-left: 0.1rem;
   }
