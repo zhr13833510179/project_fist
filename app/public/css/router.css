@@ -28,7 +28,7 @@
 #app .router img {
     width: 0.5rem;
     position: absolute;
-    bottom:0.4rem;
+    bottom:0.35rem;
     margin-left: -0.25rem;
 }
 #app .router a {
@@ -36,7 +36,7 @@
 }
 #app .router a p{
     font-size: 0.3rem;
-    margin-bottom: 0.05rem;
+    /* margin-bottom: 0.05rem; */
     float: left;
     /* position: absolute; */
     /* bottom: 0rem; */
@@ -44,6 +44,7 @@
     color: rgb(140, 140, 140)
 }
 #app .router .box {
-    /* margin-left: 0.3rem; */
+    position: absolute;
+    bottom:-0.05rem;
     left: 0.5rem;
 }
