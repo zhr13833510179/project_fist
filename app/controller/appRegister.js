@@ -12,7 +12,8 @@ class AppRegisterController extends Controller {
         HPIN: "获取验证码",
         LD: "注册",
         agree: "注册代表同意",
-        conesal: "《隐私条款》"
+        conesal: "《隐私条款》",
+        jpg111:"/public/images/状态栏.png"
     })
   }
 }
