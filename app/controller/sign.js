@@ -11,7 +11,7 @@ class SignController extends Controller {
         register: "注册用户",
         forget: "忘记密码"
     })
-  }
+  };
 }
 
 module.exports = SignController;

@@ -1,41 +1,100 @@
-
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../public/css/appRegister.css">
-    <script src="../public/js/fontsizeset.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../public/css/appRegister.css">
+  <script src="../public/js/fontsizeset.js"></script>
+  <script src="../public/js/jquery.js"></script>
 </head>
+
 <body>
-    <img src="{{jpg111}}" class="jpg111">
-    <div class="Header">
-        <a href="/sign"><img src="../public/images/Return.png" alt class="jiao" @click="Previous_page"></a>
-        <p class="zhu">{{registe}}</p>
-        <div class="body">
-          <hr class="hr1" color="#e6e6e6" size="0.01px">
-          <p class="z1">{{MB}}</p>
-          <input type="text" placeholder="请输入手机号" class="k1" style="outline:none;">
-          <hr class="hr2" color="#e6e6e6" size="0.01px">
-          <p class="z2">{{PIN}}</p>
-          <input type="text" placeholder="请输入验证码" class="k2" style="outline:none;">
-          <hr class="hr3" color="#e6e6e6" size="0.01px">
-          <p class="z3">{{PW}}</p>
-          <input type="text" placeholder="请输入密码" class="k3" style="outline:none;">
-          <hr class="hr4" color="#e6e6e6" size="0.01px">
-          <a  class="a1">{{HPIN}}</a>
-          <a  href="/sign" class="a2">
-            <button class="z4">{{LD}}</button>
-          </a>
-        </div>
-        <div class="footer">
-          <p class="f1">
-            {{agree}}
-            <a class="a3">{{conesal}}</a>
-          </p>
-        </div>
-      </div>
+  <img src="{{jpg111}}" class="jpg111">
+  <div class="Header">
+    <a href="/sign"><img src="../public/images/Return.png" alt class="jiao" @click="Previous_page"></a>
+    <p class="zhu">{{registe}}</p>
+    <div class="body">
+      <hr class="hr1" color="#e6e6e6" size="0.01px">
+      <p class="z1">{{MB}}</p>
+      <input type="text" placeholder="请输入手机号" class="k1" style="outline:none;">
+      <hr class="hr2" color="#e6e6e6" size="0.01px">
+      <p class="z2">{{PIN}}</p>
+      <input type="text" placeholder="请输入验证码" class="k2" style="outline:none;">
+      <hr class="hr3" color="#e6e6e6" size="0.01px">
+      <p class="z3">{{PW}}</p>
+      <input type="text" placeholder="请输入密码" class="k3" style="outline:none;">
+      <hr class="hr4" color="#e6e6e6" size="0.01px">
+      <input type="button" id="btn" value="免费获取验证码" class="a1">
+      <a href="/sign" class="a2">
+        <button class="z4">{{LD}}</button>
+      </a>
+    </div>
+    <div class="footer">
+      <p class="f1">
+        {{agree}}
+        <a class="a3">{{conesal}}</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    var countdown = 60;
+
+    function sendemail(obj) {
+      // var obj = $("#btn");
+      settime(obj);
+    }
+
+    function settime(obj) {
+      if (countdown == 0) {
+        obj.attr('disabled', false);
+        obj.val("免费获取验证码");
+        countdown = 3;
+        return;
+      } else {
+        obj.attr('disabled', true);
+        obj.val("重新发送(" + countdown + ")");
+        countdown--;
+      }
+      setTimeout(function () {
+        settime(obj)
+      }, 1000)
+    }
+
+
+    $('#btn').click(function () {
+      settime($('#btn'))
+    })
+
+  </script>
+
+  <script>
+    $('#btn').click(function () {
+      setTimeout(function () {
+        // for(var i=0;i<4;i++){
+        var text = Math.floor(Math.random() * 8999 + 1000);
+        // }
+
+        
+        confirm('验证码是:' + text)
+
+
+
+        // }
+        
+
+      }, 5000)
+
+
+    })
+  </script>
 </body>
+
 </html>
 
+
+{% block js %}
+<script src="../public/js/appRegister.js"></script>
+{% endblock %}
