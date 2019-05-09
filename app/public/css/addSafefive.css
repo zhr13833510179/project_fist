@@ -11,18 +11,20 @@
   .status-bar {
     float: left;
     width: 7.5rem;
-    height: 0.4rem;
+    height: 0.35rem;
     background-color: #000000;
   }
   .status-bar img {
     float: left;
     width: 7.5rem;
+    margin-top: 0.02rem;
   }
   .add {
     float: left;
     width: 7.5rem;
     height: 0.88rem;
     background-color: #17181a;
+    margin-top: -0.01rem;
   }
   .return {
     float: left;

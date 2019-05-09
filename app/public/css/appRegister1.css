@@ -1,4 +1,4 @@
- * {
+* {
     margin: 0;
     padding: 0;
   }
@@ -10,7 +10,7 @@
     margin-left: -0.15rem;
     margin-top: -0.02rem;
   }
-  .jpg111 {
+  .jpg2 {
     float: left;
     width: 7.5rem;
     background-color: black;
@@ -24,7 +24,7 @@
   }
   .Header .zhu {
     margin-top: 0.28rem;
-    margin-left: 3.3rem;
+    margin-left: 3.35rem;
     font-size: 0.31rem;
     color: white;
   }
@@ -99,10 +99,8 @@
     text-decoration: none;
     font-size: 0.29rem;
     color: #0091ff;
-    margin-left: 5.3rem;
-    margin-top: -1.9rem;
-    border: 1px solid transparent;
-    background-color: transparent;
+    margin-left: 5.5rem;
+    margin-top: -1.7rem;
   }
   .body .z4 {
     float: left;

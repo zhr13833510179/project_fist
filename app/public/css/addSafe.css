@@ -14,7 +14,12 @@
     background-color: black;
     float: left;
     margin-left: -0.15rem;
-    margin-top: -0.15rem;
+    margin-top: 0.15rem;
+  }
+  .jpg11 {
+    float: left;
+    width: 7.5rem;
+    background-color: black;
   }
   .header .status {
     float: left;
@@ -32,7 +37,7 @@
   }
   .header .t12 {
     margin-top: 0.2rem;
-    margin-left: 2.97rem;
+    margin-left: 3.05rem;
     font-size: 0.31rem;
     color: white;
   }

@@ -11,7 +11,8 @@ class AddSafeController extends Controller {
         coffer1: "保险箱品牌：三星",
         coffer2: "保险箱序列号：12335566hdhhjasdj",
         coffer3: "保险箱IP：192.168.1.1",
-        coffer4: "添加保险箱"
+        coffer4: "添加保险箱",
+        jpg11:"/public/images/状态栏.png"
     })
   }
 }

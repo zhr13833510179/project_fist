@@ -1,0 +1,1 @@
+window.setTimeout("window.location='sign'",60000);
