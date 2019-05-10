@@ -8,13 +8,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/public/css/cg.css">
+    <script src="../public/js/fontsizeset.js"></script>
 </head>
 <body>
-    <div class="kuang">
-    <h6>用户名与密码不符请重新输入用户名或密码</h6>
-    <a class="define" href="/sign">确定</a>
-    <a class="passwordr" href="/appRegister1">找回密码</a>
-</div>
+    <div id="app">
+            <div class="kuang">
+                <span>登录失败</span>
+                    <h6>请重新输入用户名或密码</h6>
+                    <h5></h5>
+                    <a class="define" href="/sign">确定</a>
+                </div>
+    </div>
 </body>
 </html>
+
 {% endblock %}

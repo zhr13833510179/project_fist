@@ -1,46 +1,64 @@
 *{
     /* z-index: 999; */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;  
+}
+.kuang span {
+    /* width: 3.5rem; */
+    font-size: 0.45rem;
+    color:#000;
+    margin-top: 0.3rem;
+    margin-left: 2.7rem;
 }
 h6{
-    float: left;
-    /* font-size: 0.36rem; */
-    color:red;
+    /* float: left; */
+    /* width: 3.5rem; */
+    font-size: 0.30rem;
+    color:#000;
     margin-top: 0.3rem;
+    margin-top: 1.5rem;
+}
+#app {
+    background-color: rgba(0, 0, 0, 0.774);
+    width: 7.5rem;
+    height: 13.34rem;
+    position: absolute;
+    z-index: 999999999;
 }
 .kuang{
+    position: absolute;
+    top:0;
     border: 1px solid #0090ff;
     width: 7rem;
     height: 4rem;
     float: left;
-   margin-top: -10rem;
+   margin-top: 4.5rem;
    background-color: #ffffff;
    margin-left: 0.23rem;
    border-radius: 2%;
    z-index: 9999999;
+   text-align: center;
+}
+.kuang h5 {
+    width: 7rem;
+    border: 1px solid #808080;
+    margin-top: 1rem;
 }
 .define{
-    color: #0090ff;
+    color: #000;
     font-size: 0.36rem;
     /* border: 1px solid red; */
-   display: inline-block;
+   display: block;
    width: 1.5rem;
    height: 0.5rem;
    text-align: center;
-   margin-left: 1rem;
    float: left;
-   margin-top: 1rem
+   margin-top: 0.2rem;
+   margin-left: 3rem;
+   width: 1rem;
 }
-.passwordr{
-    color: #0090ff;
-    font-size: 0.36rem;
-    /* border: 1px solid red; */
-    display: inline-block;
-    width: 1.5rem;
-    height: 0.5rem;
-    float: right;
-    margin-right: 1rem;
-    margin-top: 1rem;
-}
+
 
 
 
