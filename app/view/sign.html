@@ -19,6 +19,7 @@
             <span>
               <strong>{{user}}</strong>
             </span>
+            <form action="login" method="POST">
             <input type="text" placeholder="请输入用户名" class="user-name" name='username' style="outline:none;">
           </div>
           <div class="password-box">
@@ -28,11 +29,15 @@
             <input type="password" placeholder="请输入密码" class="password" name='password' style="outline:none;">
           </div>
         </div>
-          <a href="/addSafefive" class="sign-in" > <span>{{sign_in}} </span> </a>
+          <input type="submit" class="sign-in" value="登录">
+        </form>
           <a href="/appRegister" class="register">{{register}}</a>
         <a href="/appRegister1" class="forget">{{forget}}</a>
       </div>
       </div>
+      {% block content %}
+    {% endblock %}
 </body>
 </html>
+
 

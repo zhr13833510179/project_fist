@@ -31,4 +31,9 @@ module.exports = app => {
 
   router.get('/fourteen',controller.fourteen.index);
 
+  router.post('/login',controller.sign.login);
+
+  router.get('/cgw',controller.sign.cgw);
+
+
 };

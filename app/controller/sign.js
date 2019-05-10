@@ -11,7 +11,22 @@ class SignController extends Controller {
         register: "注册用户",
         forget: "忘记密码"
     })
+    
   };
+  async login() {
+    const username = this.ctx.request.body.username;
+    const password = this.ctx.request.body.password;
+    if (username === "123" && password === "456") {
+      await this.ctx.redirect("/addSafefive")
+    } else {
+      await this.ctx.redirect("/cgw")
+    }
+  }
+
+  
+  async cgw() {
+    await this.ctx.render("cgw.html")
+  }
 }
 
 module.exports = SignController;

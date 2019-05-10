@@ -3,10 +3,14 @@
     padding: 0;
     text-decoration: none;
   }
-
+#app{
+  float: left;
+  z-index: 99999;
+  height: 13.1rem;
+}
   #hedaer {
       position: relative;
-      z-index:99;
+      /* z-index:99; */
     width: 7.5rem;
     height: 0.4rem;
     float: left;
@@ -20,7 +24,7 @@
     width: 7.5rem;
   }
   .ico {
-    float: left;
+    /* float: left; */
     height: 1.85rem;
     margin-left: 2.86rem;
     margin-top: 1.05rem;
