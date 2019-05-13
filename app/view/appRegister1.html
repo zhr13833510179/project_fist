@@ -28,7 +28,7 @@
       <hr class="hr4" color="#e6e6e6" size="0.01px">
       <input type="button" id="btn" value="免费获取验证码" class="a1">
       <a href="/sign" class="a2">
-        <button class="z4">{{LD}}</button>
+        <button class="z4" id="LD">{{LD}}</button>
       </a>
     </div>
     <div class="footer">
@@ -90,6 +90,21 @@
 
     })
   </script>
+
+<script>
+  function firm(){
+    if(confirm('确认修改密码？')) {
+      alert('确认');
+    }else{
+      alert('取消')
+    }
+  }
+
+
+$('#LD').click(function(){
+  firm($('#LD'))
+})
+</script>
 </body>
 
 </html>
