@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="../public/css/appRegister.css">
+  <link rel="stylesheet" href="../public/css/appRegister1.css">
   <script src="../public/js/fontsizeset.js"></script>
   <script src="../public/js/jquery.js"></script>
 </head>
 
 <body>
-  <img src="{{jpg2}}" class="jpg111"> 
+  <img src="{{jpg2}}" class="jpg2">
   <div class="Header">
     <a href="/sign"><img src="../public/images/Return.png" alt class="jiao" @click="Previous_page"></a>
     <p class="zhu">{{registe}}</p>
@@ -21,14 +21,14 @@
       <input type="number" placeholder="请输入手机号" class="k1" style="outline:none;">
       <hr class="hr2" color="#e6e6e6" size="0.01px">
       <p class="z2">{{PIN}}</p>
-      <input type="number" placeholder="请输入验证码" class="k2" style="outline:none;">
+      <input type="number" placeholder="请输入验证码" style="outline:none;" id="text">
       <hr class="hr3" color="#e6e6e6" size="0.01px">
       <p class="z3">{{PW}}</p>
       <input type="password" placeholder="请输入密码" class="k3" style="outline:none;">
       <hr class="hr4" color="#e6e6e6" size="0.01px">
       <input type="button" id="btn" value="免费获取验证码" class="a1">
       <a href="/sign" class="a2">
-        <button class="z4" id="LD">{{LD}}</button>
+        <button class="z4" id="ld">{{LD}}</button>
       </a>
     </div>
     <div class="footer">
@@ -71,40 +71,54 @@
   </script>
 
   <script>
+    // $('#btn').click(function () {
+    //   setTimeout(function () {
+    //     // for(var i=0;i<4;i++){
+    //     var text = Math.floor(Math.random() * 8999 + 1000);
+    //     // }
+
+        
+    //     confirm('验证码是:' + text)
+
+
+
+    //     // }
+        
+
+    //   }, 5000)
+
+
+    // })
+
     $('#btn').click(function () {
-      setTimeout(function () {
-        // for(var i=0;i<4;i++){
-        var text = Math.floor(Math.random() * 8999 + 1000);
-        // }
-
-        
-        confirm('验证码是:' + text)
-
-
-
-        // }
-        
-
-      }, 5000)
-
-
-    })
+  setTimeout(function () {
+    var text = Math.floor(Math.random() * 8999 + 1000);
+    confirm('验证码是:' + text)
+    $("#text").val(text)
+    }, 5000)
+  })
   </script>
 
 <script>
   function firm(){
-    if(confirm('确认修改密码？')) {
-      alert('确认');
+    if (confirm('确定注册？')) {
+      alert('确定');
     }else{
       alert('取消')
+      self.location='/appRegister'
     }
-  }
+  }  
+  
+  $('#ld').click(function () {
+    firm($('#ld'))
+  })
 
+  
+  
 
-$('#LD').click(function(){
-  firm($('#LD'))
-})
 </script>
+
+
 </body>
 
 </html>

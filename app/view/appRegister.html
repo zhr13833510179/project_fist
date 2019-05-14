@@ -21,7 +21,7 @@
       <input type="number" placeholder="请输入手机号" class="k1" style="outline:none;">
       <hr class="hr2" color="#e6e6e6" size="0.01px">
       <p class="z2">{{PIN}}</p>
-      <input type="number" placeholder="请输入验证码" class="k2" style="outline:none;">
+      <input type="number" placeholder="请输入验证码" style="outline:none;" id="text">
       <hr class="hr3" color="#e6e6e6" size="0.01px">
       <p class="z3">{{PW}}</p>
       <input type="password" placeholder="请输入密码" class="k3" style="outline:none;">
@@ -71,24 +71,32 @@
   </script>
 
   <script>
+    // $('#btn').click(function () {
+    //   setTimeout(function () {
+    //     // for(var i=0;i<4;i++){
+    //     var text = Math.floor(Math.random() * 8999 + 1000);
+    //     // }
+
+        
+    //     confirm('验证码是:' + text)
+
+
+
+    //     // }
+        
+
+    //   }, 5000)
+
+
+    // })
+
     $('#btn').click(function () {
-      setTimeout(function () {
-        // for(var i=0;i<4;i++){
-        var text = Math.floor(Math.random() * 8999 + 1000);
-        // }
-
-        
-        confirm('验证码是:' + text)
-
-
-
-        // }
-        
-
-      }, 5000)
-
-
-    })
+  setTimeout(function () {
+    var text = Math.floor(Math.random() * 8999 + 1000);
+    confirm('验证码是:' + text)
+    $("#text").val(text)
+    }, 5000)
+  })
   </script>
 
 <script>

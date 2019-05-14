@@ -24,7 +24,7 @@
   }
   .Header .zhu {
     margin-top: 0.28rem;
-    margin-left: 3.3rem;
+    margin-left: 3.55rem;
     font-size: 0.31rem;
     color: white;
   }
@@ -60,7 +60,7 @@
     margin-left: 0.4rem;
     margin-top: 0.47rem;
   }
-  .body .k2 {
+  .body #text {
     float: left;
     font-size: 0.29rem;
     border: none;

@@ -13,7 +13,7 @@ class AppRegisteroController extends Controller {
         LD: "忘记密码",
         agree: "注册代表同意",
         conesal: "《隐私条款》",
-        jpg2:"/public/images/状态栏.png"
+        jpg2:"/public/images/状态栏@2x.1.png",
     })
   }
 }
